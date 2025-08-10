@@ -1,0 +1,97 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Form - BussApp Finder</title>
+        <meta name="description" content="Lucky Star Website Management Agency">
+        
+    <style>
+        body{
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        p,h1,h2,legend,label{
+            font-family: "Trebuchet MS";
+            color:whitesmoke;
+        }
+        u{
+            color:#b2fcfb;
+        }
+        </style>
+    </head>
+    <body>
+<img src ="logo1.png">
+<h1><u>Registration Form</u></h1>
+
+<h2>Hello, lucky one. Please fill in the following form to proceed with your subscription.</h2>
+
+<form action="services.html" method="post">
+<fieldset>
+<legend>Part I</legend>
+<label for="fname">First Name:</label>
+<input type="text" id="fname" name="fname">
+<label for="mname">Middle Name:</label>
+<input type="text" id="mname" name="mname">
+<label for="lname">Last Name:</label>
+<input type="text" id="sname" name="sname"><br><br>
+</fieldset>
+
+<fieldset>
+<legend>Part II</legend>
+<label for="bdate">Age:</label>
+<input type="age" id="age" name="age">
+<label for="bdate">Birthdate:</label>
+<input type="date" id="bdate" name="bdate"
+min ="2000-01-01" max="2022-12-31"><br>
+    
+<h2>What is your gender?</h2>
+
+<input type="radio" id="male" name="gender" value="Male">
+<label for="gender">Male</label><br>
+<input type="radio" id="female" name="gender" value="Female">
+<label for="gender">Female</label><br>
+<input type="radio" id="others" name="gender" value="Others">
+<label for="gender">Rather not say</label><br>
+
+<h2>Address</h2>
+<label for="ss">Street/Subdivision:</label><br>
+<input type="text" id="ss" name="ss"><br>
+<label for="brgy">Barangay:</label><br>
+<input type="text" id="brgy" name="brgy"><br>
+<label for="ct">City/Town:</label><br>
+<input type="text" id="ct" name="ct"><br>
+<label for="pr">Province:</label><br>
+<input type="text" id="pr" name="pr"><br>
+<label for="country">Country:</label><br>
+<input type="text" id="country" name="country"><br>
+</fieldset>
+
+<fieldset>
+<legend>Part III</legend>
+<h2>Your chosen subscription:</h2>
+
+<label for="subs">Where do you want to subscribe?</label>
+<select id="subs" name="sub" size="1">
+<option value="sub1">1 Star Access</option>
+<option value="sub2">3 Star Access</option>
+<option value="sub3">5 Star Access</option>
+</select>
+
+</fieldset>
+
+<fieldset>
+<h2><u>Before you go, please enter your email address and number in case we need to contact you.</u></h2>
+<label for="email">Email Address:</label><br>
+<input type="email" id="ead" name="ead"><br>
+<label for="phnum">Phone Number:</label><br>
+<input type="text" id="phnum" name="phnum"><br>
+</fieldset>
+
+<h2>If you are done, please click here to close the form.</h2>
+<input type="submit" value="Done!" onclick="window.location.href='#';">
+
+</form>
+</body>
+</html>
